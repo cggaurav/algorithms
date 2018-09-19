@@ -8,6 +8,7 @@ int m,n;
 vector<int> adjacent[10001];
 bool visited[10001];
 int DFSno[10001],f[10001],parent[10001],q,inf=200000000,countnbr1=0;
+
 /* Define f[i] as the vertex with the minimum DFS no that you can visit from the subtree of i including i*/
 int dfs(int i)
 {
@@ -35,6 +36,7 @@ int dfs(int i)
 	cout<<" Computed for "<<i<<endl;
 	cout<<" DFS "<<DFSno[i]<<"  F[i] "<<f[i]<<endl;cin>>q;
 }
+
 int main()
 {
 	scanf("%d%d",&n,&m);
