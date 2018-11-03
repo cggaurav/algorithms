@@ -5,6 +5,4 @@ Recap with JS in 2018.
 
 # Which ones?
 
-* BFS
-* DFS
-...
+* [HackerEarth](https://www.hackerearth.com/practice/algorithms)
