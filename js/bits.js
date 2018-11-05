@@ -6,6 +6,10 @@
 // To check if odd, num & 1
 // Multiplication by 2. x <<= 1
 
+const isPower2 = (num) => {
+	return !(num & (num - 1))
+}
+
 const setBit = (num, position) => {
 	let mask = 1 << position
 	return num | mask
@@ -39,3 +43,7 @@ const getBit = (num, position) => {
 // console.log(getBit(5, 4))
 // console.log(getBit(5, 6))
 // console.log(flipBit(6, 2))
+
+// console.log(isPower2(2))
+// console.log(isPower2(128))
+// console.log(isPower2(127))
