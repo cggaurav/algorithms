@@ -2,9 +2,11 @@ function isPrime(number) {
     let start = 2
     const limit = Math.sqrt(number)
     while (start <= limit) {
-        if (number % start++ < 1) return false
+        if (number % start < 1) return false
+        start ++
     }
-    return number > 1
+	// 
+    return (number > 1)
 }
 
 console.log(isPrime(1))
